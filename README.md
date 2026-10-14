@@ -27,8 +27,8 @@ This investigation sheet helps you gather key technical information from the thr
 
 | Criteria | Details |
 |---------|---------|
-| API Base URL | `_______________________________` |
-| Endpoint for current ISS location | `_______________________________` |
+| API Base URL | `http://api.open-notify.org/iss-now.json` |
+| Endpoint for current ISS location | `iss-now` |
 | Sample response format (example JSON) |  
 ```
 
@@ -61,12 +61,24 @@ This investigation sheet helps you gather key technical information from the thr
 
 | Criteria | Details |
 |---------|---------|
-| API Provider (Choose one) | **OpenWeather, OpenWeatherMap (or other – provide details)** |
-| API Base URL | `_______________________________` |
-| Endpoint for current weather | `_______________________________` |
-| Authentication method | `_______________________________` |
-| Required query parameters | `_______________________________` |
-| Sample JSON response (formatted example) |  
+| API Provider (OpenWeatherMap) | **OpenWeather, OpenWeatherMap (or other – provide details)** |
+| API Base URL | `https://api.openweathermap.org/data/2.5/weather` |
+| Endpoint for current weather | `?q=London&appid=434ca08d38015284e03e161e2cf5eabe&units=metric` |
+| Authentication method | `no authentication method` |
+| Required query parameters | `location of desired weather data, API key and units` |
+| Sample JSON response {
+    "coord": {
+        "lon": -0.1257,
+        "lat": 51.5085
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ], |  
 ```
 
 ```
