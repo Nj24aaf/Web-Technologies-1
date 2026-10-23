@@ -31,7 +31,15 @@ Accept: application/json` |
 |---------|---------|
 | API Base URL | `http://api.open-notify.org/iss-now.json` |
 | Endpoint for current ISS location | `iss-now` |
-| Sample response format (example JSON) |  
+| Sample response format (`GET http://api.open-notify.org/iss-now.json`) |
+|`{
+  "message": "success",
+  "timestamp": 1720000000,
+  "iss_position": {
+    "latitude": "35.1234",
+    "longitude": "-120.5678"
+  }
+}`|
 ```
 
 ```
