@@ -127,10 +127,10 @@ In this section, evaluate how web technologies, architecture, and design pattern
 
 Explain how the client–server model applies to your AstroBot:
 
-- Identify the **client** 
-- Identify the **server(s)** 
+- Identify the **client** `The Astrobot`
+- Identify the **server(s)** `The API tjhat recieves the requests and send response`
 - Describe how data flows between:
-  - User, AstroBot and APIs
+  - User, AstroBot and APIs `client sends http request through astrobot and then api return a response accordingly`
 
 Include a **simple block diagram** to illustrate this interaction.
 
