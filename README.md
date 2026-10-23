@@ -49,14 +49,15 @@ This investigation sheet helps you gather key technical information from the thr
 
 | Criteria | Details |
 |---------|---------|
-| Provider used (Choose one) | **LocationIQ / Mapbox/ OpenWeatherMap other -provide detail** |
-| API Base URL | `_______________________________` |
-| Endpoint for geocoding | `_______________________________` |
-| Endpoint for reverse geocoding | `_______________________________` |
-| Authentication method | `_______________________________` |
-| Required query parameters | `_______________________________` |
-| Sample request with latitude/longitude | `_______________________________` |
-| Sample JSON response (formatted example) |  
+| Provider used (OpenWeather) | **LocationIQ / Mapbox/ OpenWeatherMap other -provide detail** |
+| API Base URL | `https://api.openweathermap.org/geo/1.0` |
+| Endpoint for geocoding | `GET https://api.openweathermap.org/geo/1.0/direct` |
+| Endpoint for reverse geocoding | `GET https://api.openweathermap.org/geo/1.0/reverse` |
+| Authentication method | `OpenWeather API key, passed using the appid parameter` |
+| Required query parameters | `Geocoding: q (city name), appid (API key). Reverse geocoding: lat, lon, appid` |
+| Sample request with latitude/longitude | `https://api.openweathermap.org/geo/1.0/reverse?lat=51.5074&lon=-0.1278&limit=1&appid=API key` |
+| Sample JSON response <img width="110" height="113" alt="image" src="https://github.com/user-attachments/assets/8599d2f4-53c3-4e97-9ce8-6dcd0dc07f1f" />
+ |  
 ```
 
 ```
