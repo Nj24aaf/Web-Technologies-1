@@ -137,6 +137,8 @@ Include a **simple block diagram** to illustrate this interaction.
 ####  Security Considerations: (3 marks )
 - Consider but not limiting to secure handling of API keys and tokens, API rate limiting, and Input validation (e.g., handling user commands safely), include examples from code where necessary to illustrate.
 
+- Asking for input for tokens instead of being built in and it rate limited to every 5 seconds and it only recognises /commands and anything else
+
 ---
 
 ###  RESTful API Usage in Your Application (3 marks )
@@ -148,6 +150,8 @@ Explain how REST APIs are used in your AstroBot:
 - Describe how JSON responses are received and processed  
 
 Note: Relate your explanation directly to your code for higher grade. 
+
+AstroBot uses GET requests to retrieve data from Webex, OpenWeather, the ISS API and NASA, and POST requests to send messages to Webex. The bot processes the JSON responses to extract the information it needs and displays it in readable messages. It also uses error handling and request timeouts to help prevent failures when an API is unavailable.
 
 #### Security Considerations: (2 marks)
 - Check response status codes, Handling invalid or unexpected API responses, Avoiding excessive API calls
@@ -177,7 +181,13 @@ Reflect on your AstroBot (400 words):
 - What security risks did you identify and how were they handled?  
 - How could your solution be improved in the future?  
 
----
+---AstroBot meets the Astronomy Club's needs by allowing users to access weather information, the current location of the International Space Station (ISS), and NASA's Astronomy Picture of the Day through Webex. One design decision that worked well was using separate functions for different commands, making the code easier to understand and maintain.
+
+One challenge was integrating different APIs because each service uses different endpoints, parameters and response formats. I also encountered errors with NASA's APOD API and had to update the code to handle its response correctly. Testing the commands in Webex helped me identify and fix these problems.
+
+Security is important because the bot uses API keys and an access token. These credentials should be kept private and should not be shared publicly. The bot also needs to handle failed API requests and avoid making unnecessary requests that could exceed rate limits.
+
+In the future, AstroBot could be improved by adding more astronomy features, improving error messages and making its responses more organised. Overall, this project helped me understand how APIs, HTTP requests, JSON data and the client-server model work together in a practical application.
 
  **Tip:** Link your answers directly to your code and examples for higher marks.
 ### Notes
