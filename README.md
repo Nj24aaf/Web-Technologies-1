@@ -88,13 +88,14 @@ This investigation sheet helps you gather key technical information from the thr
 
 | Criteria | Details |
 |---------|---------|
-| Library used | `_______________________________` |
-| Function used to convert epoch | `_______________________________` |
-| Sample code to convert timestamp |  
+| Library used | `time` |
+| Function used to convert epoch | `time.localtime()` |
+| Sample code to convert timestamp | <img width="164" height="136" alt="image" src="https://github.com/user-attachments/assets/58971286-c871-4a8c-8c38-3b04ba91a296" />
+ 
 ```  
 ```
 |
-| Output (human-readable time) | `_______________________________` |
+| Output (human-readable time) | `2024-07-03 09:46:40 UTC` |
 
 ---
 
@@ -102,12 +103,13 @@ This investigation sheet helps you gather key technical information from the thr
 
 | Criteria | Details |
 |---------|---------|
-| API Provider | '_________' |
-| API Base URL | `_______________________________` |
-| Endpoint | `_______________________________` |
-| Authentication method | `_______________________________` |
-| Required query parameters | `_______________________________` |
-| Sample JSON response (formatted example) |  
+| API Provider | 'NASA' |
+| API Base URL | `https://api.nasa.gov` |
+| Endpoint | `GET https://api.nasa.gov/planetary/apod` |
+| Authentication method | `NASA API key using the api_key query parameter` |
+| Required query parameters | `api_key` |
+| Sample JSON response (formatted example) | <img width="428" height="125" alt="image" src="https://github.com/user-attachments/assets/101f546d-311f-4416-b1a3-57ee692cd3ec" />
+  
 ```
 
 ```
