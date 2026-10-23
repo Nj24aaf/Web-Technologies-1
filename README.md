@@ -19,9 +19,7 @@ This investigation sheet helps you gather key technical information from the thr
 | Endpoint to get messages | `GET /messages` |
 | Endpoint to send message | `POST /messages` |
 | Required headers | `Authorization: Bearer (webex token) and Accept: application/json. For POST requests, also use Content-Type: application/json.` |
-| Sample full GET or POST request | `GET https://webexapis.com/v1/rooms?max=100
-Authorization: Bearer (webex token)
-Accept: application/json` |
+| Sample full GET or POST request | `GET https://webexapis.com/v1/rooms?max=100<br>Authorization: Bearer (webex token)<br>Accept: application/json` |
 
 ---
 
@@ -76,19 +74,8 @@ Accept: application/json` |
 | Endpoint for current weather | `?q=London&appid=434ca08d38015284e03e161e2cf5eabe&units=metric` |
 | Authentication method | `no authentication method` |
 | Required query parameters | `location of desired weather data, API key and units` |
-| Sample JSON response {
-    "coord": {
-        "lon": -0.1257,
-        "lat": 51.5085
-    },
-    "weather": [
-        {
-            "id": 803,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
-        }
-    ], |  
+| Sample JSON response |  <img width="258" height="199" alt="image" src="https://github.com/user-attachments/assets/474aeeed-52a6-427d-89d2-3ed44cb110c2" />
+
 ```
 
 ```
